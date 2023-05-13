@@ -12,9 +12,10 @@ module.exports = {
                  100: '#23221F'},
       'orange': { 500: '#A35709',
                   200: '#FF8303' },
-      'white': '#F0E3CA'
-    }
-  },
-  plugins: [],
+      'white': { 400: '#F0E3CA',
+                 100: '#ffffff'}
+    },
+    plugins: [],
+  }
 }
 

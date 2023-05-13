@@ -9,7 +9,7 @@ const Input = ({ label, ...rest }: Props) => {
         <input 
             type='text'
             placeholder={label}
-            className='h-12 py-3 bg-black-500 text-white border-2 border-orange-200 rounded-md focus:ring-0 focus:ring-offset-0 text-left placeholder:pl-4 focus:bg-black-100'
+            className='h-12 py-3 w-96 bg-black-500 placeholder:text-lg placeholder:text-white-400 ring-2 ring-orange-200 rounded-md focus:outline-none text-left placeholder:pl-4 focus:bg-black-100 focus:placeholder:text-white-100'
             {...rest}
         />
     );
