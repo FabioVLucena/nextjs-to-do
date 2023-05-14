@@ -1,9 +1,29 @@
 import Head from 'next/head'
 import Button from '../components/Button'
 import Input from '../components/Input'
-import TaskCard from '../components/TaskCard'
+// import TaskCard from '../components/TaskCard'
+// import { useQuery } from 'react-query'
+// import apiClient from '../config/apiClient'
+
+// type Task = {
+//   id: number,
+//   descricao: string
+// };
 
 export default function Home() {
+  // const { data } = useQuery<Task[]>("todos", () => {
+  //   return apiClient
+  //     .get("/tasks")
+  //     .then((response) => response.data);
+  // })
+
+  // {data?.map((task) => {
+  //   console.log(task)
+  // })}
+    
+  // {data?.map((task) => {
+  //   <TaskCard id={task.id} descricao={task.descricao} />
+  // })}
   return (
     <>
       <Head>
@@ -19,13 +39,7 @@ export default function Home() {
           </Button>
         </header>
         <body className='flex flex-col justify-center items-center w-full h-4/5'>
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
-          <TaskCard descricao='teste' />
+          TESTE
         </body>
       </main>
     </>

@@ -1,12 +1,13 @@
 import Button from "./Button";
 
 interface Props {
+    id: number,
     descricao: string
 }
 
-const TaskCard = ({ descricao }: Props) => {
+const TaskCard = ({ id, descricao }: Props) => {
     return (  
-        <div className='flex justify-between items-center w-[500px] h-20 bg-black-100 border-4 border-orange-500 rounded-lg px-5 mb-4'>
+        <div key={id} className='flex justify-between items-center w-[500px] h-20 bg-black-100 border-4 border-orange-500 rounded-lg px-5 mb-4'>
             <div className='text-xl text-white-100'>
                 {descricao}
             </div>
