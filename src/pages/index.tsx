@@ -5,6 +5,7 @@ import TaskCard from '../components/TaskCard'
 import { useMutation, useQuery } from 'react-query'
 import apiClient from '../config/apiClient'
 import { ChangeEvent, useState } from 'react'
+import Count from '../components/Count'
 
 type Task = {
   id: number,
@@ -64,6 +65,7 @@ export default function Home() {
         </header>
 
         <div className='flex flex-col justify-start items-center w-full h-4/5'>
+          <Count quantidade={data?.length} />
           {data?.map((task) => (
             <TaskCard key={task.id} id={task.id} descricao={task.descricao} refetch={refetch} />
           ))}

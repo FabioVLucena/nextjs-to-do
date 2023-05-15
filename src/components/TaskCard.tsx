@@ -30,7 +30,7 @@ const TaskCard = ({ id, descricao, refetch }: Props) => {
     };
 
     return (  
-        <div key={id} className='flex justify-between items-center w-[500px] h-20 bg-black-100 border-4 border-orange-500 rounded-lg px-5 mb-4'>
+        <div key={id} className='flex justify-between items-center w-[500px] h-20 bg-black-100 border-4 border-orange-500 rounded-lg px-5 mt-4'>
             <div className='text-xl text-white-100'>
                 {descricao}
             </div>
