@@ -9,11 +9,11 @@ interface Props {
 }
 
 async function deleteTask(id: number) {
-    const response = await apiClient.delete(`/tasks/${id}`, {
+    const response = await apiClient.delete(`/api/tasks/${id}`, {
       method: 'DELETE',
     });
   
-    if (response.status !== 200) {
+    if (response.status !== 204) {
         throw new Error('Erro ao excluir a tarefa.');
     }
 }

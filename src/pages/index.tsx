@@ -17,7 +17,7 @@ export default function Home() {
 
   const { data, refetch } = useQuery<Task[]>("todos", () => {
     return apiClient
-      .get("/tasks")
+      .get("/api/tasks")
       .then((response) => response.data);
   })
 
@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   async function createTask(descricao: string) {
-    const response = await apiClient.post('/tasks', {
+    const response = await apiClient.post('/api/tasks', {
       descricao: descricao
     });
   
